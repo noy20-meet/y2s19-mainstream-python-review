@@ -8,7 +8,9 @@ NUMBERS_TO_LETTERS = {0:'a', 1:'b', 2:'c', 3:'d', 4:'e', 5:'f', 6:'g', 7:'h', 8:
 					  23: 'x', 24: 'y', 25: 'z'}
 
 def createShiftDictionary(s):
-	pass
+	for i in range (26):
+                dictionary[NUMBERS_TO_LETTERS[i]] = NUMBERS_TO_LETTERS[(i+s)%26]
+        return dictionary
 
 def encode(plaintext, s):
 	pass
